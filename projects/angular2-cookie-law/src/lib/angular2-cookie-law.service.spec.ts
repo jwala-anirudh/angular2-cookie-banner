@@ -12,7 +12,7 @@ describe("Angular2CookieLawService", () => {
 
     document.cookie = "cookieLawSeen=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
 
-    service = TestBed.get(Angular2CookieLawService);
+    service = TestBed.inject(Angular2CookieLawService);
   });
 
   it("should be created", () => {

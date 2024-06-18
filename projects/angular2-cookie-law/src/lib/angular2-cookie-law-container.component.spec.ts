@@ -37,7 +37,7 @@ describe("CookieLawContainerComponent", () => {
       ],
     }).compileComponents();
 
-    cookiesPolicyService = TestBed.get(Angular2CookieLawService);
+    cookiesPolicyService = TestBed.inject(Angular2CookieLawService);
   }));
 
   beforeEach(() => {

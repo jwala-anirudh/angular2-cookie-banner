@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/demo-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -24,6 +25,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -114,7 +121,8 @@
           },
           "configurations": {
             "production": {
-              "project": "projects/angular2-cookie-law/ng-package.prod.json"
+              "project": "projects/angular2-cookie-law/ng-package.prod.json",
+              "tsConfig": "projects/angular2-cookie-law/tsconfig.lib.prod.json"
             }
           }
         },
