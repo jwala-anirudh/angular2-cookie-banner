@@ -1,7 +1,7 @@
 {
   "name": "angular2-cookie-banner",
-  "version": "0.0.0-development",
-  "description": "Angular2+ component that provides a banner to inform users about cookie law",
+  "version": "1.0.0",
+  "description": "Angular2+ component that provides a banner to inform users about cookie banner",
   "repository": {
     "type": "git",
     "url": "https://github.com/jwala-anirudh/angular2-cookie-banner.git"
