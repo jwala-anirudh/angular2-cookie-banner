@@ -12,7 +12,7 @@ import { DOCUMENT, isPlatformBrowser } from "@angular/common";
 @Injectable({
   providedIn: "root",
 })
-export class Angular2CookieLawService {
+export class Angular2CookieBannerService {
   constructor(
     @Inject(DOCUMENT) private doc: any,
     @Inject(PLATFORM_ID) private platform: Object

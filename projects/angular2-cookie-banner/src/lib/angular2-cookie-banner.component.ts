@@ -20,9 +20,9 @@ import { AnimationEvent } from "@angular/animations";
 import { closeIcon } from "./icons";
 import { translateInOut } from "./animations";
 import {
-  CookieLawAnimation,
-  CookieLawTarget,
-  CookieLawPosition,
+  CookieBannerAnimation,
+  CookieBannerTarget,
+  CookieBannerPosition,
 } from "./definitions";
 
 @Component({
@@ -32,10 +32,10 @@ import {
   animations: [translateInOut],
   encapsulation: ViewEncapsulation.None,
 })
-export class CookieLawComponent implements OnInit {
+export class CookieBannerComponent implements OnInit {
   public closeSvg: SafeHtml;
   public currentStyles: any;
-  public transition: CookieLawAnimation;
+  public transition: CookieBannerAnimation;
 
   @HostBinding("class.cookie-banner")
   public cookieLawClass: boolean;
@@ -61,7 +61,7 @@ export class CookieLawComponent implements OnInit {
   get target() {
     return this._target;
   }
-  set target(value: CookieLawTarget) {
+  set target(value: CookieBannerTarget) {
     this._target =
       value !== null &&
       `${value}` !== "false" &&
@@ -74,7 +74,7 @@ export class CookieLawComponent implements OnInit {
   get position() {
     return this._position;
   }
-  set position(value: CookieLawPosition) {
+  set position(value: CookieBannerPosition) {
     this._position =
       value !== null &&
       `${value}` !== "false" &&
@@ -90,8 +90,8 @@ export class CookieLawComponent implements OnInit {
 
   private _learnMore: string;
   private _awsomeCloseIcon: string;
-  private _target: CookieLawTarget;
-  private _position: CookieLawPosition;
+  private _target: CookieBannerTarget;
+  private _position: CookieBannerPosition;
 
   constructor(private domSanitizer: DomSanitizer) {
     this.transition = "bottomIn";

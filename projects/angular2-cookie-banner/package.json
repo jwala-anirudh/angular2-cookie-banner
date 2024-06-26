@@ -1,6 +1,6 @@
 {
   "name": "angular2-cookie-banner",
-  "description": "Angular2+ component that provides a banner to inform users about cookie law",
+  "description": "Angular2+ component that provides a banner to inform users about cookie banner",
   "repository": {
     "type": "git",
     "url": "https://github.com/jwala-anirudh/angular2-cookie-banner.git"

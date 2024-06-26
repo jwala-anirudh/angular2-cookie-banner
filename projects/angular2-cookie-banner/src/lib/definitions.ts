@@ -6,10 +6,10 @@
  * @author: @jwala-anirudh <anirudhjwala@gmail.com>
  */
 
-export declare type CookieLawPosition = "top" | "bottom";
-export declare type CookieLawAnimation =
+export declare type CookieBannerPosition = "top" | "bottom";
+export declare type CookieBannerAnimation =
   | "topIn"
   | "bottomIn"
   | "topOut"
   | "bottomOut";
-export declare type CookieLawTarget = "_blank" | "_self";
+export declare type CookieBannerTarget = "_blank" | "_self";

@@ -16,9 +16,9 @@ import {
   EventEmitter,
 } from "@angular/core";
 
-import { Angular2CookieLawService } from "./angular2-cookie-banner.service";
-import { CookieLawComponent } from "./angular2-cookie-banner.component";
-import { CookieLawTarget, CookieLawPosition } from "./definitions";
+import { Angular2CookieBannerService } from "./angular2-cookie-banner.service";
+import { CookieBannerComponent } from "./angular2-cookie-banner.component";
+import { CookieBannerTarget, CookieBannerPosition } from "./definitions";
 
 @Component({
   selector: "cookie-banner",
@@ -35,12 +35,12 @@ import { CookieLawTarget, CookieLawPosition } from "./definitions";
     </cookie-banner-component>
   `,
 })
-export class CookieLawContainerComponent implements OnInit {
+export class CookieBannerContainerComponent implements OnInit {
   @HostBinding("attr.seen")
   public seen: boolean;
 
-  @ViewChild(CookieLawComponent)
-  public cookieLawComponent: CookieLawComponent;
+  @ViewChild(CookieBannerComponent)
+  public cookieLawComponent: CookieBannerComponent;
 
   @Input()
   public name: string;
@@ -49,10 +49,10 @@ export class CookieLawContainerComponent implements OnInit {
   public learnMore: string;
 
   @Input()
-  public target: CookieLawTarget;
+  public target: CookieBannerTarget;
 
   @Input()
-  public position: CookieLawPosition;
+  public position: CookieBannerPosition;
 
   @Input()
   public expiration: number;
@@ -67,7 +67,7 @@ export class CookieLawContainerComponent implements OnInit {
     return this.cookieLawService.seen(this.name);
   }
 
-  constructor(private cookieLawService: Angular2CookieLawService) {
+  constructor(private cookieLawService: Angular2CookieBannerService) {
     this.name = "cookieLawSeen"; // set a default cookie name if not provided
     this.seen = true;
   }

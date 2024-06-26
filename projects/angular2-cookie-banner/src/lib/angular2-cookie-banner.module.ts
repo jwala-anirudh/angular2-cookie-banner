@@ -14,19 +14,19 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
-import { CookieLawComponent } from "./angular2-cookie-banner.component";
-import { CookieLawContainerComponent } from "./angular2-cookie-banner-container.component";
+import { CookieBannerComponent } from "./angular2-cookie-banner.component";
+import { CookieBannerContainerComponent } from "./angular2-cookie-banner-container.component";
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [CookieLawComponent, CookieLawContainerComponent],
-  exports: [CookieLawContainerComponent],
+  declarations: [CookieBannerComponent, CookieBannerContainerComponent],
+  exports: [CookieBannerContainerComponent],
 })
-export class CookieLawModule {
-  constructor(@Optional() @SkipSelf() parentModule: CookieLawModule) {
+export class CookieBannerModule {
+  constructor(@Optional() @SkipSelf() parentModule: CookieBannerModule) {
     if (parentModule) {
       throw new Error(
-        "CookieLawModule is already loaded. Import it in the AppModule only"
+        "CookieBannerModule is already loaded. Import it in the AppModule only"
       );
     }
   }

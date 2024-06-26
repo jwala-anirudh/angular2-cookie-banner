@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { CookieLawContainerComponent } from "./angular2-cookie-banner-container.component";
-import { Angular2CookieLawService } from "./angular2-cookie-banner.service";
-import { CookieLawComponent } from "./angular2-cookie-banner.component";
+import { CookieBannerContainerComponent } from "./angular2-cookie-banner-container.component";
+import { Angular2CookieBannerService } from "./angular2-cookie-banner.service";
+import { CookieBannerComponent } from "./angular2-cookie-banner.component";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { DebugElement } from "@angular/core";
 import { By } from "@angular/platform-browser";
 
-describe("CookieLawContainerComponent", () => {
-  let component: CookieLawContainerComponent;
-  let cookiesPolicyService: Angular2CookieLawService;
-  let fixture: ComponentFixture<CookieLawContainerComponent>;
+describe("CookieBannerContainerComponent", () => {
+  let component: CookieBannerContainerComponent;
+  let cookiesPolicyService: Angular2CookieBannerService;
+  let fixture: ComponentFixture<CookieBannerContainerComponent>;
 
-  // stub CookieLawService for test purposes
-  const CookieLawServiceStub = {
+  // stub CookieBannerService for test purposes
+  const CookieBannerServiceStub = {
     _seen: false,
 
     seen() {
@@ -28,20 +28,20 @@ describe("CookieLawContainerComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [NoopAnimationsModule],
-      declarations: [CookieLawContainerComponent, CookieLawComponent],
+      declarations: [CookieBannerContainerComponent, CookieBannerComponent],
       providers: [
         {
-          provide: Angular2CookieLawService,
-          useValue: CookieLawServiceStub,
+          provide: Angular2CookieBannerService,
+          useValue: CookieBannerServiceStub,
         },
       ],
     }).compileComponents();
 
-    cookiesPolicyService = TestBed.inject(Angular2CookieLawService);
+    cookiesPolicyService = TestBed.inject(Angular2CookieBannerService);
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CookieLawContainerComponent);
+    fixture = TestBed.createComponent(CookieBannerContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -62,7 +62,7 @@ describe("CookieLawContainerComponent", () => {
     );
   });
 
-  it("CookieLawComponent should have a `seen` attribute", () => {
+  it("CookieBannerComponent should have a `seen` attribute", () => {
     const element: HTMLElement = fixture.debugElement.nativeElement;
 
     fixture.detectChanges();
@@ -70,14 +70,14 @@ describe("CookieLawContainerComponent", () => {
     expect(element.getAttribute("seen")).toBe("false");
   });
 
-  it("CookieLawComponent should be initially visible", () => {
+  it("CookieBannerComponent should be initially visible", () => {
     fixture.detectChanges();
 
     expect(component.seen).toBe(false);
     expect(component.cookieLawSeen).toBe(false);
   });
 
-  it("CookieLawComponent should be dismissible", () => {
+  it("CookieBannerComponent should be dismissible", () => {
     fixture.detectChanges();
 
     expect(component.seen).toBe(false);
@@ -89,7 +89,7 @@ describe("CookieLawContainerComponent", () => {
     expect(component.cookieLawSeen).toBe(true);
   });
 
-  it("CookieLawElementComponent should accept attributes", () => {
+  it("CookieBannerElementComponent should accept attributes", () => {
     fixture.detectChanges();
 
     const el: DebugElement = fixture.debugElement.query(
@@ -108,7 +108,7 @@ describe("CookieLawContainerComponent", () => {
     expect(el.componentInstance.transition).toBe("bottomIn");
   });
 
-  it("CookieLawElementComponent should renders on the top", () => {
+  it("CookieBannerElementComponent should renders on the top", () => {
     component.name = "myCookie";
     component.position = "top";
 
@@ -122,7 +122,7 @@ describe("CookieLawContainerComponent", () => {
     expect(el.componentInstance.position).toBe("top");
   });
 
-  it("CookieLawElementComponent learnMore", () => {
+  it("CookieBannerElementComponent learnMore", () => {
     component.learnMore = "/#cookies";
     component.target = "_self";
 
