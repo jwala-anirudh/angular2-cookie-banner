@@ -1,6 +1,6 @@
 import { TestBed, inject } from "@angular/core/testing";
 
-import { Angular2CookieLawService } from "./angular2-cookie-law.service";
+import { Angular2CookieLawService } from "./angular2-cookie-banner.service";
 
 describe("Angular2CookieLawService", () => {
   let service: Angular2CookieLawService;

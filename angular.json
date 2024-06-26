@@ -107,22 +107,22 @@
         }
       }
     },
-    "angular2-cookie-law": {
-      "root": "projects/angular2-cookie-law",
-      "sourceRoot": "projects/angular2-cookie-law/src",
+    "angular2-cookie-banner": {
+      "root": "projects/angular2-cookie-banner",
+      "sourceRoot": "projects/angular2-cookie-banner/src",
       "projectType": "library",
-      "prefix": "cookie-law",
+      "prefix": "cookie-banner",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/angular2-cookie-law/tsconfig.lib.json",
-            "project": "projects/angular2-cookie-law/ng-package.json"
+            "tsConfig": "projects/angular2-cookie-banner/tsconfig.lib.json",
+            "project": "projects/angular2-cookie-banner/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/angular2-cookie-law/ng-package.prod.json",
-              "tsConfig": "projects/angular2-cookie-law/tsconfig.lib.prod.json"
+              "project": "projects/angular2-cookie-banner/ng-package.prod.json",
+              "tsConfig": "projects/angular2-cookie-banner/tsconfig.lib.prod.json"
             }
           }
         },
@@ -130,9 +130,9 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "browsers": "Chrome",
-            "main": "projects/angular2-cookie-law/src/test.ts",
-            "tsConfig": "projects/angular2-cookie-law/tsconfig.spec.json",
-            "karmaConfig": "projects/angular2-cookie-law/karma.conf.js"
+            "main": "projects/angular2-cookie-banner/src/test.ts",
+            "tsConfig": "projects/angular2-cookie-banner/tsconfig.spec.json",
+            "karmaConfig": "projects/angular2-cookie-banner/karma.conf.js"
           },
           "configurations": {
             "headless": {
@@ -145,8 +145,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/angular2-cookie-law/tsconfig.lib.json",
-              "projects/angular2-cookie-law/tsconfig.spec.json"
+              "projects/angular2-cookie-banner/tsconfig.lib.json",
+              "projects/angular2-cookie-banner/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }

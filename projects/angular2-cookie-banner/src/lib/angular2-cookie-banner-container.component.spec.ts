@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { CookieLawContainerComponent } from "./angular2-cookie-law-container.component";
-import { Angular2CookieLawService } from "./angular2-cookie-law.service";
-import { CookieLawComponent } from "./angular2-cookie-law.component";
+import { CookieLawContainerComponent } from "./angular2-cookie-banner-container.component";
+import { Angular2CookieLawService } from "./angular2-cookie-banner.service";
+import { CookieLawComponent } from "./angular2-cookie-banner.component";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { DebugElement } from "@angular/core";
 import { By } from "@angular/platform-browser";
@@ -93,7 +93,7 @@ describe("CookieLawContainerComponent", () => {
     fixture.detectChanges();
 
     const el: DebugElement = fixture.debugElement.query(
-      By.css("cookie-law-component")
+      By.css("cookie-banner-component")
     );
 
     expect(fixture.nativeElement.getAttribute("seen")).toBe("false");
@@ -115,7 +115,7 @@ describe("CookieLawContainerComponent", () => {
     fixture.detectChanges();
 
     const el: DebugElement = fixture.debugElement.query(
-      By.css("cookie-law-component")
+      By.css("cookie-banner-component")
     );
 
     expect(component.position).toBe("top");
@@ -129,7 +129,7 @@ describe("CookieLawContainerComponent", () => {
     fixture.detectChanges();
 
     const el: DebugElement = fixture.debugElement.query(
-      By.css("cookie-law-component")
+      By.css("cookie-banner-component")
     );
 
     expect(el.componentInstance.target).toBe("_self");

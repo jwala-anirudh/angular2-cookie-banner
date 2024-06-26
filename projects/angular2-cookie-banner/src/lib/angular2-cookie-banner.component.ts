@@ -1,5 +1,5 @@
 /**
- * angular2-cookie-law
+ * angular2-cookie-banner
  *
  * Copyright 2016-2018, @jwala-anirudh, All rights reserved.
  *
@@ -26,9 +26,9 @@ import {
 } from "./definitions";
 
 @Component({
-  selector: "cookie-law-component",
-  templateUrl: "./angular2-cookie-law.component.html",
-  styleUrls: ["./angular2-cookie-law.component.css"],
+  selector: "cookie-banner-component",
+  templateUrl: "./angular2-cookie-banner.component.html",
+  styleUrls: ["./angular2-cookie-banner.component.css"],
   animations: [translateInOut],
   encapsulation: ViewEncapsulation.None,
 })
@@ -37,7 +37,7 @@ export class CookieLawComponent implements OnInit {
   public currentStyles: any;
   public transition: CookieLawAnimation;
 
-  @HostBinding("class.cookie-law")
+  @HostBinding("class.cookie-banner")
   public cookieLawClass: boolean;
 
   @Input()

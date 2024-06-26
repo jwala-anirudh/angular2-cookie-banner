@@ -2,6 +2,6 @@
   "extends": "../../tslint.json",
   "rules": {
     "directive-selector": [true, "attribute", "cookieLaw", "camelCase"],
-    "component-selector": [true, "element", "cookie-law", "kebab-case"]
+    "component-selector": [true, "element", "cookie-banner", "kebab-case"]
   }
 }

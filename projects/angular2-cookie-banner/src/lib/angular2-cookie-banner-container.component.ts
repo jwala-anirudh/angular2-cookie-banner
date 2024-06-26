@@ -1,5 +1,5 @@
 /**
- * angular2-cookie-law
+ * angular2-cookie-banner
  *
  * Copyright 2016-2018, @jwala-anirudh, All rights reserved.
  *
@@ -16,14 +16,14 @@ import {
   EventEmitter,
 } from "@angular/core";
 
-import { Angular2CookieLawService } from "./angular2-cookie-law.service";
-import { CookieLawComponent } from "./angular2-cookie-law.component";
+import { Angular2CookieLawService } from "./angular2-cookie-banner.service";
+import { CookieLawComponent } from "./angular2-cookie-banner.component";
 import { CookieLawTarget, CookieLawPosition } from "./definitions";
 
 @Component({
-  selector: "cookie-law",
+  selector: "cookie-banner",
   template: `
-    <cookie-law-component
+    <cookie-banner-component
       *ngIf="!seen"
       [awsomeCloseIcon]="awsomeCloseIcon"
       [learnMore]="learnMore"
@@ -32,7 +32,7 @@ import { CookieLawTarget, CookieLawPosition } from "./definitions";
       (isSeen)="hasBeenDismissed()"
     >
       <ng-content></ng-content>
-    </cookie-law-component>
+    </cookie-banner-component>
   `,
 })
 export class CookieLawContainerComponent implements OnInit {
