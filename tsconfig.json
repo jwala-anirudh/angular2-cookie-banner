@@ -9,13 +9,14 @@
     "declaration": false,
     "moduleResolution": "node",
     "experimentalDecorators": true,
-    "target": "es2020",
+    "target": "ES2022",
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "paths": {
       "angular2-cookie-law-banner": [
         "projects/angular2-cookie-law-banner/src/lib/angular2-cookie-law-banner.module.ts"
       ]
-    }
+    },
+    "useDefineForClassFields": false
   }
 }
