@@ -24,7 +24,6 @@
   "bugs": {
     "url": "https://github.com/jwala-anirudh/angular2-cookie-law-banner/issues"
   },
-  "homepage": "https://github.com/jwala-anirudh/angular2-cookie-law-banner#readme",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^9.0.0",
