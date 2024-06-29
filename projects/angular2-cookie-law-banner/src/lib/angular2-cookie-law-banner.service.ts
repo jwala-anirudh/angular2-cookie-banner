@@ -1,5 +1,5 @@
 /**
- * angular2-cookie-banner
+ * angular2-cookie-law-banner
  *
  * Copyright 2016-2018, @jwala-anirudh, All rights reserved.
  *
@@ -12,7 +12,7 @@ import { DOCUMENT, isPlatformBrowser } from "@angular/common";
 @Injectable({
   providedIn: "root",
 })
-export class Angular2CookieBannerService {
+export class Angular2CookieLawBannerService {
   constructor(
     @Inject(DOCUMENT) private doc: any,
     @Inject(PLATFORM_ID) private platform: Object

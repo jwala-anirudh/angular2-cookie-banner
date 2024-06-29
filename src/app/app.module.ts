@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { CookieBannerModule } from "angular2-cookie-banner";
+import { CookieBannerModule } from "angular2-cookie-law-banner";
 import { AppComponent } from "./app.component";
 
 @NgModule({

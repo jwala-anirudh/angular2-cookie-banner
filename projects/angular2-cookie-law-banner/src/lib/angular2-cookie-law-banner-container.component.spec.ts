@@ -1,15 +1,15 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { CookieBannerContainerComponent } from "./angular2-cookie-banner-container.component";
-import { Angular2CookieBannerService } from "./angular2-cookie-banner.service";
-import { CookieBannerComponent } from "./angular2-cookie-banner.component";
+import { CookieBannerContainerComponent } from "./angular2-cookie-law-banner-container.component";
+import { Angular2CookieLawBannerService } from "./angular2-cookie-law-banner.service";
+import { CookieBannerComponent } from "./angular2-cookie-law-banner.component";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { DebugElement } from "@angular/core";
 import { By } from "@angular/platform-browser";
 
 describe("CookieBannerContainerComponent", () => {
   let component: CookieBannerContainerComponent;
-  let cookiesPolicyService: Angular2CookieBannerService;
+  let cookiesPolicyService: Angular2CookieLawBannerService;
   let fixture: ComponentFixture<CookieBannerContainerComponent>;
 
   // stub CookieBannerService for test purposes
@@ -31,13 +31,13 @@ describe("CookieBannerContainerComponent", () => {
       declarations: [CookieBannerContainerComponent, CookieBannerComponent],
       providers: [
         {
-          provide: Angular2CookieBannerService,
+          provide: Angular2CookieLawBannerService,
           useValue: CookieBannerServiceStub,
         },
       ],
     }).compileComponents();
 
-    cookiesPolicyService = TestBed.inject(Angular2CookieBannerService);
+    cookiesPolicyService = TestBed.inject(Angular2CookieLawBannerService);
   }));
 
   beforeEach(() => {

@@ -1,5 +1,5 @@
 /**
- * angular2-cookie-banner
+ * angular2-cookie-law-banner
  *
  * Copyright 2016-2018, @jwala-anirudh, All rights reserved.
  *
@@ -14,8 +14,8 @@ import {
 } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
-import { CookieBannerComponent } from "./angular2-cookie-banner.component";
-import { CookieBannerContainerComponent } from "./angular2-cookie-banner-container.component";
+import { CookieBannerComponent } from "./angular2-cookie-law-banner.component";
+import { CookieBannerContainerComponent } from "./angular2-cookie-law-banner-container.component";
 
 @NgModule({
   imports: [CommonModule],

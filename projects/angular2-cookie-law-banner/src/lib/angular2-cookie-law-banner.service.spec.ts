@@ -1,18 +1,18 @@
 import { TestBed, inject } from "@angular/core/testing";
 
-import { Angular2CookieBannerService } from "./angular2-cookie-banner.service";
+import { Angular2CookieLawBannerService } from "./angular2-cookie-law-banner.service";
 
-describe("Angular2CookieBannerService", () => {
-  let service: Angular2CookieBannerService;
+describe("Angular2CookieLawBannerService", () => {
+  let service: Angular2CookieLawBannerService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [Angular2CookieBannerService],
+      providers: [Angular2CookieLawBannerService],
     });
 
     document.cookie = "cookieLawSeen=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
 
-    service = TestBed.inject(Angular2CookieBannerService);
+    service = TestBed.inject(Angular2CookieLawBannerService);
   });
 
   it("should be created", () => {

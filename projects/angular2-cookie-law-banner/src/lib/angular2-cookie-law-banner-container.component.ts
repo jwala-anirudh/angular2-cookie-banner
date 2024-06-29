@@ -1,5 +1,5 @@
 /**
- * angular2-cookie-banner
+ * angular2-cookie-law-banner
  *
  * Copyright 2016-2018, @jwala-anirudh, All rights reserved.
  *
@@ -16,8 +16,8 @@ import {
   EventEmitter,
 } from "@angular/core";
 
-import { Angular2CookieBannerService } from "./angular2-cookie-banner.service";
-import { CookieBannerComponent } from "./angular2-cookie-banner.component";
+import { Angular2CookieLawBannerService } from "./angular2-cookie-law-banner.service";
+import { CookieBannerComponent } from "./angular2-cookie-law-banner.component";
 import { CookieBannerTarget, CookieBannerPosition } from "./definitions";
 
 @Component({
@@ -67,7 +67,7 @@ export class CookieBannerContainerComponent implements OnInit {
     return this.cookieLawService.seen(this.name);
   }
 
-  constructor(private cookieLawService: Angular2CookieBannerService) {
+  constructor(private cookieLawService: Angular2CookieLawBannerService) {
     this.name = "cookieLawSeen"; // set a default cookie name if not provided
     this.seen = true;
   }

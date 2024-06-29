@@ -14,8 +14,8 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "paths": {
-      "angular2-cookie-banner": [
-        "projects/angular2-cookie-banner/src/lib/angular2-cookie-banner.module.ts"
+      "angular2-cookie-law-banner": [
+        "projects/angular2-cookie-law-banner/src/lib/angular2-cookie-law-banner.module.ts"
       ]
     }
   }

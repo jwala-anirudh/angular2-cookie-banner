@@ -1,5 +1,5 @@
 /**
- * angular2-cookie-banner
+ * angular2-cookie-law-banner
  *
  * Copyright 2016-2018, @jwala-anirudh, All rights reserved.
  *

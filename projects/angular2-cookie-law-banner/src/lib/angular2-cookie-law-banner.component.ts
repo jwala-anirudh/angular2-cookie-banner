@@ -1,5 +1,5 @@
 /**
- * angular2-cookie-banner
+ * angular2-cookie-law-banner
  *
  * Copyright 2016-2018, @jwala-anirudh, All rights reserved.
  *
@@ -27,8 +27,8 @@ import {
 
 @Component({
   selector: "cookie-banner-component",
-  templateUrl: "./angular2-cookie-banner.component.html",
-  styleUrls: ["./angular2-cookie-banner.component.css"],
+  templateUrl: "./angular2-cookie-law-banner.component.html",
+  styleUrls: ["./angular2-cookie-law-banner.component.css"],
   animations: [translateInOut],
   encapsulation: ViewEncapsulation.None,
 })
