@@ -1,5 +1,5 @@
 /**
- * angular2-cookie-law
+ * angular2-cookie-law-banner
  *
  * Copyright 2016-2018, @jwala-anirudh, All rights reserved.
  *
@@ -20,24 +20,24 @@ import { AnimationEvent } from "@angular/animations";
 import { closeIcon } from "./icons";
 import { translateInOut } from "./animations";
 import {
-  CookieLawAnimation,
-  CookieLawTarget,
-  CookieLawPosition,
+  CookieBannerAnimation,
+  CookieBannerTarget,
+  CookieBannerPosition,
 } from "./definitions";
 
 @Component({
-  selector: "cookie-law-component",
-  templateUrl: "./angular2-cookie-law.component.html",
-  styleUrls: ["./angular2-cookie-law.component.css"],
+  selector: "cookie-banner-component",
+  templateUrl: "./angular2-cookie-law-banner.component.html",
+  styleUrls: ["./angular2-cookie-law-banner.component.css"],
   animations: [translateInOut],
   encapsulation: ViewEncapsulation.None,
 })
-export class CookieLawComponent implements OnInit {
+export class CookieBannerComponent implements OnInit {
   public closeSvg: SafeHtml;
   public currentStyles: any;
-  public transition: CookieLawAnimation;
+  public transition: CookieBannerAnimation;
 
-  @HostBinding("class.cookie-law")
+  @HostBinding("class.cookie-banner")
   public cookieLawClass: boolean;
 
   @Input()
@@ -61,7 +61,7 @@ export class CookieLawComponent implements OnInit {
   get target() {
     return this._target;
   }
-  set target(value: CookieLawTarget) {
+  set target(value: CookieBannerTarget) {
     this._target =
       value !== null &&
       `${value}` !== "false" &&
@@ -74,7 +74,7 @@ export class CookieLawComponent implements OnInit {
   get position() {
     return this._position;
   }
-  set position(value: CookieLawPosition) {
+  set position(value: CookieBannerPosition) {
     this._position =
       value !== null &&
       `${value}` !== "false" &&
@@ -90,8 +90,8 @@ export class CookieLawComponent implements OnInit {
 
   private _learnMore: string;
   private _awsomeCloseIcon: string;
-  private _target: CookieLawTarget;
-  private _position: CookieLawPosition;
+  private _target: CookieBannerTarget;
+  private _position: CookieBannerPosition;
 
   constructor(private domSanitizer: DomSanitizer) {
     this.transition = "bottomIn";

@@ -1,12 +1,12 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { CookieLawModule } from "angular2-cookie-law";
+import { CookieBannerModule } from "angular2-cookie-law-banner";
 import { AppComponent } from "./app.component";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, CookieLawModule],
+  imports: [BrowserModule, BrowserAnimationsModule, CookieBannerModule],
   providers: [],
   bootstrap: [AppComponent],
 })

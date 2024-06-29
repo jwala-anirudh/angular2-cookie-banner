@@ -1,4 +1,4 @@
-.cookie-law-wrapper {
+.cookie-banner-wrapper {
   background: #333;
   color: #bbb;
   display: block;
@@ -15,21 +15,21 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.cookie-law-wrapper a {
+.cookie-banner-wrapper a {
   color: #bbb;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
-.cookie-law-wrapper a:hover {
+.cookie-banner-wrapper a:hover {
   color: #fff;
 }
 
-.cookie-law-wrapper a:hover svg {
+.cookie-banner-wrapper a:hover svg {
   fill: #fff;
 }
 
-.cookie-law-wrapper .dismiss {
+.cookie-banner-wrapper .dismiss {
   display: block;
   box-sizing: border-box;
   padding: 10px;
@@ -40,7 +40,7 @@
   line-height: 20px;
 }
 
-.cookie-law-wrapper .dismiss svg {
+.cookie-banner-wrapper .dismiss svg {
   display: block;
   fill: #bbb;
   width: 20px;
@@ -49,39 +49,39 @@
   transition: fill 0.2s;
 }
 
-.cookie-law-wrapper .copy {
+.cookie-banner-wrapper .copy {
   box-sizing: border-box;
   padding: 10px 60px 10px 10px;
 }
 
-.cookie-law-wrapper .copy span {
+.cookie-banner-wrapper .copy span {
   color: #fff;
   font-weight: 400;
 }
 
-.cookie-law-wrapper .copy a {
+.cookie-banner-wrapper .copy a {
   text-decoration: underline;
 }
 
-.cookie-law-wrapper .copy a:active,
+.cookie-banner-wrapper .copy a:active,
 .copy a:hover {
   outline: 0;
 }
 
 @media (min-width: 600px) {
   /* For bigger devices: */
-  .cookie-law-wrapper .copy {
+  .cookie-banner-wrapper .copy {
     padding: 20px 60px 20px 20px;
     font-size: 18px;
     line-height: 24px;
   }
 
-  .cookie-law-wrapper .dismiss {
+  .cookie-banner-wrapper .dismiss {
     top: 10px;
     right: 15px;
   }
 
-  .cookie-law-wrapper .dismiss svg {
+  .cookie-banner-wrapper .dismiss svg {
     width: 24px;
     height: 24px;
   }

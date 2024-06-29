@@ -1,9 +1,9 @@
 {
-  "name": "angular2-cookie-law",
-  "description": "Angular2+ component that provides a banner to inform users about cookie law",
+  "name": "angular2-cookie-law-banner",
+  "description": "Angular2+ component that provides a banner to inform users about cookie banner",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jwala-anirudh/angular2-cookie-law.git"
+    "url": "https://github.com/jwala-anirudh/angular2-cookie-law-banner.git"
   },
   "keywords": [
     "ng",
@@ -17,14 +17,14 @@
     "angular2-component",
     "angular7-component",
     "cookie",
-    "cookie-law"
+    "cookie-banner"
   ],
   "author": "Anirudh Jwala <anirudhjwala@gmail.com> (https://github.com/jwala-anirudh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jwala-anirudh/angular2-cookie-law/issues"
+    "url": "https://github.com/jwala-anirudh/angular2-cookie-law-banner/issues"
   },
-  "homepage": "https://github.com/jwala-anirudh/angular2-cookie-law#readme",
+  "homepage": "https://github.com/jwala-anirudh/angular2-cookie-law-banner#readme",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^9.0.0",

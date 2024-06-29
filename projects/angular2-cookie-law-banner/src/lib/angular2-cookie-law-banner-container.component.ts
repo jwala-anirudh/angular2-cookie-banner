@@ -1,5 +1,5 @@
 /**
- * angular2-cookie-law
+ * angular2-cookie-law-banner
  *
  * Copyright 2016-2018, @jwala-anirudh, All rights reserved.
  *
@@ -16,14 +16,14 @@ import {
   EventEmitter,
 } from "@angular/core";
 
-import { Angular2CookieLawService } from "./angular2-cookie-law.service";
-import { CookieLawComponent } from "./angular2-cookie-law.component";
-import { CookieLawTarget, CookieLawPosition } from "./definitions";
+import { Angular2CookieLawBannerService } from "./angular2-cookie-law-banner.service";
+import { CookieBannerComponent } from "./angular2-cookie-law-banner.component";
+import { CookieBannerTarget, CookieBannerPosition } from "./definitions";
 
 @Component({
-  selector: "cookie-law",
+  selector: "cookie-banner",
   template: `
-    <cookie-law-component
+    <cookie-banner-component
       *ngIf="!seen"
       [awsomeCloseIcon]="awsomeCloseIcon"
       [learnMore]="learnMore"
@@ -32,15 +32,15 @@ import { CookieLawTarget, CookieLawPosition } from "./definitions";
       (isSeen)="hasBeenDismissed()"
     >
       <ng-content></ng-content>
-    </cookie-law-component>
+    </cookie-banner-component>
   `,
 })
-export class CookieLawContainerComponent implements OnInit {
+export class CookieBannerContainerComponent implements OnInit {
   @HostBinding("attr.seen")
   public seen: boolean;
 
-  @ViewChild(CookieLawComponent)
-  public cookieLawComponent: CookieLawComponent;
+  @ViewChild(CookieBannerComponent)
+  public cookieLawComponent: CookieBannerComponent;
 
   @Input()
   public name: string;
@@ -49,10 +49,10 @@ export class CookieLawContainerComponent implements OnInit {
   public learnMore: string;
 
   @Input()
-  public target: CookieLawTarget;
+  public target: CookieBannerTarget;
 
   @Input()
-  public position: CookieLawPosition;
+  public position: CookieBannerPosition;
 
   @Input()
   public expiration: number;
@@ -67,7 +67,7 @@ export class CookieLawContainerComponent implements OnInit {
     return this.cookieLawService.seen(this.name);
   }
 
-  constructor(private cookieLawService: Angular2CookieLawService) {
+  constructor(private cookieLawService: Angular2CookieLawBannerService) {
     this.name = "cookieLawSeen"; // set a default cookie name if not provided
     this.seen = true;
   }
