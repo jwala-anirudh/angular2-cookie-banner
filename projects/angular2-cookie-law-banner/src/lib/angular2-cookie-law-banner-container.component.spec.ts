@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { waitForAsync, ComponentFixture, TestBed } from "@angular/core/testing";
 
 import { CookieBannerContainerComponent } from "./angular2-cookie-law-banner-container.component";
 import { Angular2CookieLawBannerService } from "./angular2-cookie-law-banner.service";
@@ -25,7 +25,7 @@ describe("CookieBannerContainerComponent", () => {
     },
   };
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [NoopAnimationsModule],
       declarations: [CookieBannerContainerComponent, CookieBannerComponent],
